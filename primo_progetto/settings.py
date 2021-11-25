@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'news',
     'prima_app',
     'seconda_app',
     'django.contrib.admin',
@@ -59,7 +60,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates'),
                 os.path.join(BASE_DIR, 'seconda_app/templates'),
-                os.path.join(BASE_DIR, 'templates')],
+                os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR,'news')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
