@@ -7,7 +7,7 @@ class Giornalista(models.Model):
 
 
     def __str__(self):
-        return self.nome + " " + self.congome
+        return self.nome + " " + self.cognome
 
 class Articolo(models.Model):
     """il modello generico di un articolo di news"""
