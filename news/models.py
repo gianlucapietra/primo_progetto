@@ -11,9 +11,9 @@ class Giornalista(models.Model):
 
 class Articolo(models.Model):
     """il modello generico di un articolo di news"""
-titolo=models.CharField(max_length=100)#alcuni campi necessitano di parametri obbligatori
-contenuto=models.TextField()
-giornalista=models.ForeignKey(Giornalista, on_delete=models.CASCADE, related_name="articoli")
+    titolo=models.CharField(max_length=100,blank=True)#alcuni campi necessitano di parametri obbligatori
+    contenuto=models.TextField(blank=True)
+    giornalista=models.ForeignKey(Giornalista, on_delete=models.CASCADE, related_name="articoli",blank=True,default=1)
 
-def __str__(self):
-    return self.titolo
+    def __str__(self):
+        return self.titolo
