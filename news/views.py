@@ -18,7 +18,8 @@ def articoloDetailView(request, pk):
 class ArticoloDetailViewCB(DetailView):
    model=Articolo
    template_name= "articolo_detail.html"
-class ArticoloListView(ListView):
+   
+class ArticoloListViewCB(ListView):
    model=Articolo
    template_name="lista_articoli.html"
 
