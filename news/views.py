@@ -1,7 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, response
 from .models import Articolo, Giornalista
 
 
 def home(request):
-    return HttpResponse("<h1>homepage news!</h1>")
+   articoli=Articolo.objects.all()
+   giornalisti= Giornalista.objects.all()
+   context={"articoli": articoli, "giornalisti": giornalisti}
+   print(context)
+   return render(requestm, "homepage.html", context)
+   
