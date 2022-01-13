@@ -7,6 +7,7 @@ from prima_app.views import ChiSiamo
 from prima_app.views import index
 from prima_app.views import variabili
 
+
 app_name="prima_app"
 urlpatterns=[
     path('homepage',homepage,name='homepage'),

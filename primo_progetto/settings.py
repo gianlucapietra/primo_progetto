@@ -62,7 +62,8 @@ TEMPLATES = [
                 os.path.join(BASE_DIR, 'seconda_app/templates'),
                 os.path.join(BASE_DIR, 'news/templates'),
                 os.path.join(BASE_DIR, 'templates'),
-                os.path.join(BASE_DIR,'news')],
+                os.path.join(BASE_DIR,'news'),
+                os.path.join(BASE_DIR, 'prova_pratica1/template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
